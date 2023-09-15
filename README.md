@@ -1,5 +1,9 @@
 # ScheduleJawn
 
+A business scheduling tool to stay organized with customers and appointments.
+App supports users in different timezones.
+
+Screenshots of the scheduling tool app:
 
 <img width="1001" alt="loginPage" src="https://github.com/mmeas08/ScheduleJawn/assets/145131642/5e828b1c-dd46-432d-84ca-95d58126baab">
 <img width="1203" alt="homePage" src="https://github.com/mmeas08/ScheduleJawn/assets/145131642/6028dd96-0be6-4c7e-95cf-88a5fb7f1b65">
