@@ -5,6 +5,8 @@ App supports users in different timezones.
 
 Screenshots of the scheduling tool app:
 
+<div align="center">
+
 <img width="1001" alt="loginPage" src="https://github.com/mmeas08/ScheduleJawn/assets/145131642/7b9a9d72-bd00-4b43-8e4b-250f4bd595d5">
 
 <img width="1203" alt="homePage" src="https://github.com/mmeas08/ScheduleJawn/assets/145131642/7f09415b-1c1c-429b-a8a7-eb2c38e2db80">
@@ -24,3 +26,5 @@ Screenshots of the scheduling tool app:
 <img width="1188" alt="reportPage1" src="https://github.com/mmeas08/ScheduleJawn/assets/145131642/d44b5b5b-7c95-4d5c-90be-890436477d4e">
 
 <img width="1184" alt="reportPage2" src="https://github.com/mmeas08/ScheduleJawn/assets/145131642/61c84bdf-d811-47dd-b7e6-f91008ecadf4">
+
+</div>
