@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditCustomerController">
+    <children>
+        <AnchorPane layoutX="270.0" layoutY="28.0" minWidth="-Infinity" prefHeight="42.0" prefWidth="200.0">
+            <children>
+                <Label alignment="CENTER" layoutX="12.0" prefHeight="42.0" prefWidth="177.0" style="-fx-border-radius: 0;" text="edit customer">
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN">
+                            <color>
+                                <Color red="0.6052631735801697" green="0.5834064483642578" blue="0.5716374516487122" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="293.0" layoutY="58.0" prefHeight="2.0" prefWidth="407.0" style="-fx-background-color: black; -fx-border-color: black;">
+            <effect>
+                <DropShadow />
+            </effect>
+        </AnchorPane>
+        <VBox layoutX="200.0" layoutY="120.0" prefHeight="371.0" prefWidth="300.0">
+            <children>
+                <Label text="CustomerID" />
+                <TextField fx:id="customerIdTF" disable="true" editable="false" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="175.0">
+                    <VBox.margin>
+                        <Insets bottom="15.0" />
+                    </VBox.margin>
+                </TextField>
+                <Label text="Name*">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="editCustomerNameTF" promptText="Harry Potter">
+                    <VBox.margin>
+                        <Insets bottom="15.0" />
+                    </VBox.margin>
+                </TextField>
+                <Label text="Address*">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="editCustomerAddressTF" promptText="4 Privet Drive, Little Whinging">
+                    <VBox.margin>
+                        <Insets bottom="15.0" />
+                    </VBox.margin>
+                </TextField>
+                <Label text="Postal Code*">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="editPostalCodeTF" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="175.0">
+                    <VBox.margin>
+                        <Insets bottom="15.0" />
+                    </VBox.margin>
+                </TextField>
+                <Label text="Country* " />
+                <ComboBox fx:id="editCustomerCountryCB" maxWidth="-Infinity" minWidth="-Infinity" onAction="#enteredEditCustomerCountryCB" prefWidth="175.0">
+                    <VBox.margin>
+                        <Insets bottom="15.0" />
+                    </VBox.margin>
+                </ComboBox>
+                <Label text="State/Province*" />
+                <ComboBox fx:id="editCustomerStateProvinceCB" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="175.0">
+                    <VBox.margin>
+                        <Insets bottom="15.0" />
+                    </VBox.margin>
+                </ComboBox>
+                <Label text="Phone Number*">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="editCustomerPhoneTF" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="175.0" />
+            </children>
+        </VBox>
+        <AnchorPane layoutY="643.0" prefHeight="2.0" prefWidth="361.0" style="-fx-background-color: black; -fx-border-color: black;" AnchorPane.leftAnchor="0.0">
+            <effect>
+                <DropShadow />
+            </effect>
+        </AnchorPane>
+        <AnchorPane layoutX="137.0" layoutY="143.0" prefHeight="500.0" prefWidth="0.0" style="-fx-background-color: black; -fx-border-color: black;">
+            <effect>
+                <DropShadow />
+            </effect>
+        </AnchorPane>
+        <AnchorPane layoutX="564.0" layoutY="60.0" prefHeight="641.0" prefWidth="2.0" style="-fx-background-color: black; -fx-border-color: black;">
+            <effect>
+                <DropShadow />
+            </effect>
+        </AnchorPane>
+        <Button contentDisplay="TOP" layoutX="429.0" layoutY="571.0" mnemonicParsing="false" onAction="#clickedAdd" prefHeight="36.0" prefWidth="94.0" style="-fx-border-color: blue;" text="ADD">
+            <graphic>
+                <ImageView fitHeight="28.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/Ok.png" />
+                    </image>
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </ImageView>
+            </graphic>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button contentDisplay="TOP" layoutX="602.0" layoutY="631.0" mnemonicParsing="false" onAction="#clickedCancel" prefHeight="60.0" prefWidth="77.0" style="-fx-border-color: red;" text="CANCEL">
+            <graphic>
+                <ImageView fitHeight="28.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/Close.png" />
+                    </image>
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </ImageView>
+            </graphic>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+    </children>
+</AnchorPane>

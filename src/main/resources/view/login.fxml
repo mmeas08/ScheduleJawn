@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <children>
+        <AnchorPane layoutX="303.0" layoutY="143.0" prefHeight="374.0" prefWidth="394.0" style="-fx-border-color: white; -fx-border-radius: 20; -fx-background-color: transparent;">
+            <children>
+                <Label fx:id="loginTitleLabel" alignment="CENTER" layoutX="44.0" layoutY="50.0" prefHeight="44.0" prefWidth="307.0" text="Login" textFill="WHITESMOKE">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="usernameTF" layoutX="146.0" layoutY="144.0" promptText="username">
+                    <font>
+                        <Font name="Tahoma Bold" size="13.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="passwordTF" layoutX="146.0" layoutY="203.0" onAction="#enterPasswordTF" promptText="password">
+                    <font>
+                        <Font name="Tahoma Bold" size="13.0" />
+                    </font>
+                </PasswordField>
+                <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="84.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/User.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="84.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/Lock.png" />
+                    </image>
+                </ImageView>
+                <AnchorPane layoutX="133.0" layoutY="93.0" prefHeight="3.0" prefWidth="130.0" style="-fx-background-color: #7FFFD4;" />
+            <HBox layoutX="109.0" layoutY="248.0" prefHeight="34.0" prefWidth="217.0" spacing="5.0">
+               <children>
+                  <Label fx:id="timezoneLabel" text="Timezone:">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </Label>
+                      <Label fx:id="LDTLabel" text="[Timezone]">
+                          <font>
+                              <Font name="System Italic" size="13.0" />
+                          </font>
+                      </Label>
+               </children>
+            </HBox>
+            </children>
+            <effect>
+                <InnerShadow blurType="GAUSSIAN">
+                    <color>
+                        <Color red="0.06993177533149719" green="0.3684210479259491" blue="0.17440302670001984" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </AnchorPane>
+    </children>
+</AnchorPane>
